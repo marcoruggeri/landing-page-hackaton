@@ -321,9 +321,6 @@ Version Card
     height: 260px;
   }
 
-  .version--cards {
-    max-width: 250px;
-  }
   .versionCard {
     width: 250px;
   }
