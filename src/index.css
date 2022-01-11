@@ -50,14 +50,14 @@ nav > button:hover {
 .light {
   background: linear-gradient(180deg, #fff068 0%, #fee715 100%);
   text-align: center;
-  padding: 48px;
+  padding: 48px 48px 70px 48px;
 }
 
 .dark {
   background: linear-gradient(180deg, #0a0c0f 0%, #101820 100%);
   color: #fff;
   text-align: center;
-  padding: 48px;
+  padding: 48px 48px 70px 48px;
 }
 
 .title {
@@ -302,6 +302,7 @@ Version Card
     flex-direction: column;
     max-width: 300px;
     margin: 0 auto;
+    gap: 48px;
   }
 }
 
@@ -333,12 +334,6 @@ Version Card
   .versionCard {
     width: 240px;
     height: 265px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .versionCard:first-child {
-    margin-top: 48px;
   }
 
   .versionCard--title {
