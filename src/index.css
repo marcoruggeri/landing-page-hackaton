@@ -334,10 +334,11 @@ Version Card
     width: 240px;
     height: 265px;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
-  .versionCard:last-child {
-    margin-bottom: 48px;
+  .versionCard:first-child {
+    margin-top: 48px;
   }
 
   .versionCard--title {
