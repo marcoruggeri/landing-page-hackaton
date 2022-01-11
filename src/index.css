@@ -333,4 +333,8 @@ Version Card
   .versionCard {
     width: 240px;
   }
+
+  .versionCard--title {
+    font-size: 48px;
+  }
 }
