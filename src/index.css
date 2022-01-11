@@ -316,7 +316,7 @@ Version Card
 }
 
 @media screen and (max-width: 400px) {
-  .img--borderw {
+  .img--border {
     width: 350px;
     height: 350px;
   }
