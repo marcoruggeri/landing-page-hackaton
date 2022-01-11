@@ -54,7 +54,7 @@ function App() {
     </section>
     <section className="light">
       <h1 className="title">Concept</h1>
-      <div className="multi--cards--container">
+      <div className="multi--cards--container concept--container">
         {ConceptData.map(cdata => (
             <DarkCard 
               key={cdata.id}

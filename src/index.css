@@ -83,8 +83,8 @@ nav > button:hover {
 }
 
 .map--img {
-  width: 368px;
-  height: 367px;
+  width: 93%;
+  height: 94%;
   object-fit: cover;
   border-radius: 18px;
 }
@@ -233,4 +233,91 @@ Version Card
   max-width: 1200px;
   margin: 48px auto 25px auto;
   gap: 93px;
+}
+
+@media screen and (max-width: 1450px) {
+  .multi--cards--container {
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 900px;
+  }
+
+  .first-card:nth-child(-1n + 3) {
+    grid-column: span 4;
+  }
+
+  .first-card:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 3 / span 4;
+  }
+
+  .first-card:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 7 / span 4;
+  }
+
+  .version--cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 750px;
+  }
+
+  .versionCard:nth-last-child(3) {
+    grid-column: span 2;
+  }
+  .versionCard:nth-last-child(2) {
+    grid-column: span 2;
+  }
+
+  .versionCard:nth-last-child(1) {
+    grid-column: 2 / span 2;
+  }
+
+  .concept--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dark--card:nth-last-child(1) {
+    grid-column: 2;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .multi--cards--container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 550px;
+  }
+  .first-card:nth-last-child(1n) {
+    grid-column: span 2;
+  }
+  .first-card:nth-last-child(3) {
+    grid-column: 2 / span 2;
+  }
+
+  .concept--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .version--cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .multi--cards--container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 48px auto 0 auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img--borderw {
+    width: 350px;
+    height: 350px;
+  }
 }
