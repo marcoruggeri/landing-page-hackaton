@@ -335,9 +335,10 @@ Version Card
   }
 
   .versionCard--title {
+    margin-top: 0;
     font-size: 48px;
   }
   .versionCard--feature {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
