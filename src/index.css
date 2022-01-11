@@ -325,6 +325,11 @@ Version Card
     height: 260px;
   }
 
+  .comingSoon,
+  .paragraph {
+    font-size: 18px;
+  }
+
   .versionCard {
     width: 240px;
   }
