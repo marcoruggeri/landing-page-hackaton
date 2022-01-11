@@ -332,10 +332,15 @@ Version Card
 
   .versionCard {
     width: 240px;
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .versionCard:last-child {
+    margin-bottom: 48px;
   }
 
   .versionCard--title {
-    margin-top: 0;
     font-size: 48px;
   }
   .versionCard--feature {
