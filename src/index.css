@@ -313,6 +313,10 @@ Version Card
     margin: 48px auto 0 auto;
     align-items: center;
   }
+
+  .left {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
