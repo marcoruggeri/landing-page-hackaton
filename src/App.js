@@ -10,8 +10,8 @@ import Onboard from "bnc-onboard";
 import Notify from "bnc-notify";
 import abi from "./abi/TalesOfEldevia.json";
 import { ethers } from "ethers";
-import mintImg from "./images/mint.png"
-import mapImg from "./images/Map.png"
+import mintImg from "./images/mint.png";
+import mapImg from "./images/Map.png";
 
 const CONTRACT = "0x27156b0157965bdE1702CdFD6Aa794e5EFbB6017";
 
@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <nav>
-        <h3>Tales of Eldivia</h3>
+        <h3>Tales of Eldevia</h3>
         <Login
           onboard={onboard}
           signer={signer}
@@ -93,7 +93,7 @@ function App() {
         />
       </nav>
       <header className="light">
-        <h1 className="title">Tales of Eldivia</h1>
+        <h1 className="title">Tales of Eldevia</h1>
         <div className="text-container">
           <p className="paragraph left">
             Fantasy-style Dungeon Crawler to face in Singleplayer. Discover the
