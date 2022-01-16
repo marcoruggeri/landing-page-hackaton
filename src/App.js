@@ -96,8 +96,8 @@ function App() {
         <h1 className="title">Tales of Eldevia</h1>
         <div className="text-container">
           <p className="paragraph left">
-            Fantasy-style Dungeon Crawler to face in Singleplayer. Discover the
-            secrets of the metaverse through{" "}
+            Fantasy-style Dungeon Crawler. Discover the secrets of the metaverse
+            through{" "}
             <span className="bold">specific missions for each class</span>,
             unravel the mysteries, defeat enemies and{" "}
             <span className="bold">shape the story with your choices.</span>
