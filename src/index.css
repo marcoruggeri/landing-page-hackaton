@@ -85,14 +85,14 @@ nav > p:hover {
   width: 204px;
   height: 48px;
   margin: 0 auto;
-  background-image: url("../public/images/ComingSoon_1.png");
+  background-image: url("./images/ComingSoon_1.png");
   background-size: cover;
   border: hidden;
   cursor: pointer;
 }
 
 .comingSoon--quest:hover {
-  background-image: url("../public/images/ComingSoon_2.png");
+  background-image: url("./images/ComingSoon_2.png");
   background-size: cover;
 }
 
@@ -125,7 +125,7 @@ footer {
   width: 233px;
   height: 386px;
   border-radius: 6.56px;
-  background-image: url("../public/images/Card.png");
+  background-image: url("./images/Card.png");
   background-size: cover;
   color: #000000;
 }
@@ -211,12 +211,12 @@ footer {
   width: 136px;
   height: 32px;
   margin: 23px auto 0 auto;
-  background-image: url("../public/images/ComingSoon_1.png");
+  background-image: url("./images/ComingSoon_1.png");
   background-size: cover;
 }
 
 .concept--card--btn:hover {
-  background-image: url("../public/images/ComingSoon_2.png");
+  background-image: url("./images/ComingSoon_2.png");
   background-size: cover;
 }
 /*============
@@ -228,7 +228,7 @@ Version Card
   height: 350px;
   border-radius: 18px;
   padding: 26px;
-  background-image: url(../public/images/roadmap-background.png);
+  background-image: url("./images/roadmap-background.png");
   background-size: cover;
 }
 
@@ -290,7 +290,7 @@ Mint Section
 .mint--card {
   min-width: 253px;
   min-height: 299px;
-  background-image: url("../public/images/MintCard.png");
+  background-image: url("./images/MintCard.png");
   background-size: cover;
   margin-right: 161px;
 }
@@ -311,38 +311,38 @@ Mint Section
 .mint--card--btn {
   width: 165px;
   height: 38px;
-  background-image: url("../public/images/MintNow.png");
+  background-image: url("./images/MintNow.png");
   background-size: cover;
   margin: 12px auto 20px auto;
   cursor: pointer;
 }
 
 .mint--card--btn:hover {
-  background-image: url("../public/images/MintNow_Hover.png");
+  background-image: url("./images/MintNow_Hover.png");
   background-size: cover;
 }
 
 .mint--card--btn:active {
-  background-image: url("../public/images/MintNow_Clik.png");
+  background-image: url("./images/MintNow_Clik.png");
   background-size: cover;
 }
 
 .mint--card--btn--connect {
   width: 165px;
   height: 38px;
-  background-image: url("../public/images/connect-wallet.png");
+  background-image: url("./images/connect-wallet.png");
   background-size: cover;
   margin: 12px auto 20px auto;
   cursor: pointer;
 }
 
 .mint--card--btn--connect:hover {
-  background-image: url("../public/images/connect-wallet-hover.png");
+  background-image: url("./images/connect-wallet-hover.png");
   background-size: cover;
 }
 
 .mint--card--btn--connect:active {
-  background-image: url("../public/images/connect-wallet-active.png");
+  background-image: url("./images/connect-wallet-active.png");
   background-size: cover;
 }
 
