@@ -71,42 +71,40 @@ nav > button:hover {
   font-size: 24px;
 }
 
-.img--border {
-  width: 392px;
-  height: 391px;
+.map--img {
+  margin: 48px auto;
+  width: 384px;
+  height: 384px;
+}
+
+.comingSoon--quest {
+  width: 204px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url("../public/images/ComingSoon_1.png");
+  background-size: cover;
+  border: hidden;
+  cursor: pointer;
+}
+
+.comingSoon--quest:hover {
+  background-image: url("../public/images/ComingSoon_2.png");
+  background-size: cover;
+}
+
+footer {
   background: linear-gradient(180deg, #fff068 0%, #fee715 100%);
-  border-radius: 18px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 48px auto;
 }
 
-.map--img {
-  width: 93%;
-  height: 94%;
-  object-fit: cover;
-  border-radius: 18px;
+.footer--text {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
 }
-
-.comingSoon {
-  width: 215px;
-  height: 49px;
-  background: #fee715;
-  color: #0a0c0f;
-  font-size: 24px;
-  font-weight: 700;
-  border: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: "Century-Gothic", serif;
-}
-
-.comingSoon:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-
 /*=========
   Card
 ==========*/
@@ -120,34 +118,26 @@ nav > button:hover {
 }
 
 .card {
-  width: 232px;
-  height: 351px;
+  width: 233px;
+  height: 386px;
   border-radius: 6.56px;
-  background: linear-gradient(180deg, rgba(254, 231, 21, 0.9) 0%, #fee715 100%);
+  background-image: url("../public/images/Card.png");
+  background-size: cover;
   color: #000000;
-  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
 }
 
-.card--container {
-  margin: 12px 13.22px 10px 13.22px;
-  border-radius: 6.56069px;
-}
-
-.card--img {
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  height: 190px;
-  margin-bottom: 14px;
+.card--img,
+.concept--card--img {
+  width: 172px;
+  height: 172px;
+  margin: 19.87px 30.4px 28px 30.4px;
   object-fit: cover;
-  border-top-left-radius: 6.56069px;
-  border-top-right-radius: 6.56069px;
 }
 
 .card--title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
 }
@@ -159,49 +149,72 @@ nav > button:hover {
 
 .card--price {
   margin: 0;
+  font-size: 18px;
+}
+
+.card--title,
+.concept--card--title,
+.card--text,
+.card--stats--img,
+.card--stats--grid {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .card--text {
   font-size: 12px;
-  margin-bottom: 17px;
-  margin-top: 3.5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   text-align: left;
+  height: 42px;
 }
 
-.card--btn {
-  width: 94px;
-  height: 30px;
-  border-radius: 8px;
-  padding: 8px, 16px;
-  border: hidden;
-  background: #101820;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 12px;
+.card--stats--img {
+  width: 183px;
+}
+
+.card--stats--grid {
+  width: 183px;
+  height: auto;
+  display: flex;
+}
+
+.card--stat {
+  width: 29px;
+  font-size: 7px;
   margin: 0;
-  cursor: pointer;
-  font-family: "Century-Gothic", serif;
+  margin-left: 1.8px;
 }
 
-.card > .card--btn:hover {
-  background: grey;
-  color: #fff;
+.card--stat:first-child {
+  margin-left: 0;
 }
 
 .bold {
   font-weight: 700;
 }
 
-.dark--card {
-  background: #0a0c0f;
-  color: #fff;
+.concept--card--title {
+  text-align: center;
+  font-size: 24px;
 }
 
-.dark--btn {
-  background: #fee715;
-  color: #0a0c0f;
+.concept--card--img {
+  margin-bottom: 24px;
 }
 
+.concept--card--btn {
+  width: 136px;
+  height: 32px;
+  margin: 23px auto 0 auto;
+  background-image: url("../public/images/ComingSoon_1.png");
+  background-size: cover;
+}
+
+.concept--card--btn:hover {
+  background-image: url("../public/images/ComingSoon_2.png");
+  background-size: cover;
+}
 /*============
 Version Card
 ===========*/
@@ -224,7 +237,7 @@ Version Card
 .versionCard--feature {
   font-size: 36px;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .version--cards {
@@ -233,6 +246,62 @@ Version Card
   max-width: 1200px;
   margin: 48px auto 25px auto;
   gap: 93px;
+}
+
+/*============
+Mint Section
+============*/
+
+.mint--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mint {
+  text-align: left;
+  margin-left: 161px;
+  margin-right: 161px;
+  max-width: 830px;
+}
+
+.mint--card {
+  min-width: 249px;
+  min-height: 299px;
+  background-image: url("../public/images/MintCard.png");
+  background-size: cover;
+  margin-right: 161px;
+}
+
+.mint--card--title {
+  font-size: 24px;
+  font-family: "modesto-condensed", serif;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.mint--card--img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 0;
+}
+
+.mint--card--btn {
+  width: 136px;
+  height: 32px;
+  background-image: url("../public/images/MintNow.png");
+  background-size: cover;
+  margin: 12px auto 20px auto;
+}
+
+.mint--card--btn:hover {
+  background-image: url("../public/images/MintNow_Hover.png");
+  background-size: cover;
+}
+
+.mint--card--btn:active {
+  background-image: url("../public/images/MintNow_Clik.png");
+  background-size: cover;
 }
 
 @media screen and (max-width: 1450px) {
@@ -276,6 +345,17 @@ Version Card
   }
   .dark--card:nth-last-child(1) {
     grid-column: 2;
+  }
+  .mint--flex {
+    flex-direction: column;
+  }
+  .mint {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mint--card {
+    margin: 60px auto 0 auto;
   }
 }
 
