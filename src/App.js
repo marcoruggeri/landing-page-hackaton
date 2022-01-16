@@ -81,17 +81,22 @@ function App() {
         <h1 className="title">Tales of Eldivia</h1>
         <div className="text-container">
           <p className="paragraph left">
-          Fantasy-style Dungeon Crawler to face in Singleplayer.
-          Discover the secrets of the metaverse through <span className="bold">specific missions for each class</span>,
-          unravel the mysteries, defeat enemies and <span className="bold">shape the story with your choices.</span> 
-          Evolve your character, making him <span className="bold">UNIQUE and inimitable,</span> in a continuous struggle between good and evil.
+            Fantasy-style Dungeon Crawler to face in Singleplayer. Discover the
+            secrets of the metaverse through{" "}
+            <span className="bold">specific missions for each class</span>,
+            unravel the mysteries, defeat enemies and{" "}
+            <span className="bold">shape the story with your choices.</span>
+            Evolve your character, making him{" "}
+            <span className="bold">UNIQUE and inimitable,</span> in a continuous
+            struggle between good and evil.
           </p>
         </div>
       </header>
       <section className="dark">
         <h1 className="title">Races</h1>
         <p className="paragraph">
-          Every race will have unique skills and characteristics that determine your game experience.
+          Every race will have unique skills and characteristics that determine
+          your game experience.
         </p>
         <div className="multi--cards--container">
           {MintData.map((cdata) => (
@@ -116,40 +121,38 @@ function App() {
       <section className="light">
         <div className="mint--flex">
           <div>
-            <h1 className="title mint">MINT YOUR OWN HERO!</h1>
+            <h1 className="title mint">FREE MINT YOUR OWN HERO!</h1>
             <p className="paragraph mint">
-              1000 Scrolls will be the tickets to access Eldevia, 
-              allowing you to claim the first heroes in the game.
+              1000 Scrolls will be the tickets to access Eldevia, allowing you
+              to claim the first heroes in the game.
             </p>
+            <p>One scroll per mint, max 5 scrolls per address</p>
           </div>
           <div className="mint--card">
             <h3 className="mint--card--title">Your tickect to Eldevia</h3>
-            <img className="mint--card--img" src="../images/mint.png"/>
-            {
-            connected ? 
-              <p className="mint--card--btn" onClick={mint}></p> : 
-              <Login 
+            <img className="mint--card--img" src="../images/mint.png" />
+            {connected ? (
+              <p className="mint--card--btn" onClick={mint}></p>
+            ) : (
+              <Login
                 onboard={onboard}
                 signer={signer}
                 connected={connected}
                 setConnected={setConnected}
                 className={"mint--card--btn--connect"}
+                mint={true}
               />
-            }
+            )}
           </div>
         </div>
       </section>
       <section className="dark">
         <h1 className="title">Quests</h1>
         <p className="paragraph">
-          1000 Scrolls will be the tickets to access Eldevia,
-           allowing you to claim the first heroes in the game.
+          1000 Scrolls will be the tickets to access Eldevia, allowing you to
+          claim the first heroes in the game.
         </p>
-          <img
-            className="map--img"
-            src="../images/Map.png"
-            alt="game map"
-          />
+        <img className="map--img" src="../images/Map.png" alt="game map" />
         <p className="comingSoon--quest"></p>
       </section>
       <section className="light ">

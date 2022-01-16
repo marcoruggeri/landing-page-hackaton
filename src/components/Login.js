@@ -1,4 +1,4 @@
-function Login({ onboard, signer, connected, setConnected, className }) {
+function Login({ onboard, signer, connected, setConnected, className, mint }) {
   const login = async () => {
     const select = await onboard.walletSelect();
     if (select) {
@@ -11,10 +11,13 @@ function Login({ onboard, signer, connected, setConnected, className }) {
 
   return (
     <p className={className} onClick={login}>
+      {console.log(mint)}
       {connected
         ? signer?.provider?.provider?.selectedAddress.substring(0, 6) +
           "..." +
           signer?.provider?.provider?.selectedAddress.substring(36)
+        : mint
+        ? ""
         : "Connect Wallet"}
     </p>
   );
