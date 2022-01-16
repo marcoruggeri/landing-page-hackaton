@@ -2,7 +2,7 @@ const ConceptData = [
     {
         id: 1,
         name: "ELF - RANGER",
-        text: "a supernatural creature of folk tales. Has magical powers.",
+        text: `a supernatural creature of folk tales. Has magical powers.`,
         textTitle: "Beast Manipulator",
         img: "./images/dark-elf.png",
     },
@@ -16,21 +16,21 @@ const ConceptData = [
     {
         id: 3,
         name: "ELF - RANGER",
-        text: "a supernatural creature of folk tales. Has magical powers.",
+        text: `a supernatural creature of folk tales. Has magical powers.`,
         textTitle: "Beast Trainer",
         img: "./images/ranger-elf.png",
     },
     {
         id: 4,
         name: "TRAINED WOLF",
-        text: "to be equipped with a Beast Trainer Ranger.",
+        text: `to be equipped with a Beast Trainer Ranger.`,
         textTitle: "Equip Card",
         img: "./images/trained-wolf.png",
     },
     {
         id: 5,
         name: "KEY",
-        text: "a supernatural creature of folk tales. Has magical powers.",
+        text: `a supernatural creature of folk tales. Has magical powers.`,
         textTitle: "Equip Card",
         img: "./images/key.png",
     },
@@ -44,7 +44,7 @@ const ConceptData = [
     {
         id: 7,
         name: "CROSSBOW",
-        text: "a supernatural creature of folk tales. Has magical powers.",
+        text: `a supernatural creature of folk tales. Has magical powers.`,
         textTitle: "Equip Card",
         img: "./images/crossbow.png",
     },
