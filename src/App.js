@@ -172,9 +172,30 @@ function App() {
       <section className="light ">
         <h1 className="title">Roadmap</h1>
         <div className="version--cards">
-          <VersionCard version="1.0" />
-          <VersionCard version="2.0" />
-          <VersionCard version="3.0" />
+          <VersionCard 
+            version="1.0"
+            step1="Ability to mint heroes"
+            step2="Minting gear items, basic spell"
+            step3="Demo / Beta"
+          />
+          <VersionCard 
+            version="2.0" 
+            step1="Definition of characteristics, experience, levels"
+            step2="Basic quest presentation"
+            step3="Add items, spells"
+          />
+          <VersionCard 
+            version="3.0"
+            step1="Home base creation"
+            step2="ERC-20 Token"
+            step3="Dynamic implementation of NFTs and Token burning"
+          />
+          <VersionCard 
+            version="4.0"
+            step1="Add new races"
+            step2="Ability to change character alignment"
+            step3="PvP" 
+          />
         </div>
       </section>
       <section className="dark">
