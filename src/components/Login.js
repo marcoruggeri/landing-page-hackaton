@@ -11,7 +11,6 @@ function Login({ onboard, signer, connected, setConnected, className, mint }) {
 
   return (
     <p className={className} onClick={login}>
-      {console.log(mint)}
       {connected
         ? signer?.provider?.provider?.selectedAddress.substring(0, 6) +
           "..." +

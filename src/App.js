@@ -8,10 +8,10 @@ import DarkCard from "./components/ConceptCard";
 import Login from "./components/Login";
 import Onboard from "bnc-onboard";
 import Notify from "bnc-notify";
-import abi from "./abi/NFT.json";
+import abi from "./abi/TalesOfEldevia.json";
 import { ethers } from "ethers";
 
-const CONTRACT = "0xab74f343d537d7de5797dfc0199593ac0af69b3b";
+const CONTRACT = "0x27156b0157965bdE1702CdFD6Aa794e5EFbB6017";
 
 function App() {
   const [connected, setConnected] = useState(false);
@@ -20,17 +20,24 @@ function App() {
   const [notify, setNotify] = useState();
   const [signer, setSigner] = useState();
   const [contract, setContract] = useState();
+  const [minted, setMinted] = useState();
 
   const mint = async () => {
     const tx = await contract.mint();
     notify.hash(tx.hash);
     await tx.wait();
+    getMinted();
+  };
+
+  const getMinted = async () => {
+    const minted = await contract.totalMinted();
+    setMinted(ethers.utils.formatUnits(minted, 0));
   };
 
   useEffect(() => {
     const initOnboard = Onboard({
       dappId: "11e82408-4791-4664-8d58-f581ac8e95d1", // [String] The API key created by step one above
-      networkId: 4, // [Integer] The Ethereum network ID your Dapp uses.
+      networkId: 137, // [Integer] The Ethereum network ID your Dapp uses.
       subscriptions: {
         wallet: (wallet) => {
           const initProvider = new ethers.providers.Web3Provider(
@@ -48,7 +55,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (provider?.provider?.networkVersion === "4") {
+    if (provider?.provider?.networkVersion === "137") {
       setSigner(provider.getSigner());
     }
   }, [provider, connected]);
@@ -56,7 +63,7 @@ function App() {
   useEffect(() => {
     const initNotify = Notify({
       dappId: "11e82408-4791-4664-8d58-f581ac8e95d1", // [String] The API key created by step one above
-      networkId: 42, // [Integer] The Ethereum network ID your Dapp uses.
+      networkId: 137, // [Integer] The Ethereum network ID your Dapp uses.
     });
     setNotify(initNotify);
   }, []);
@@ -66,6 +73,12 @@ function App() {
       setContract(new ethers.Contract(CONTRACT, abi.abi, signer));
     }
   }, [signer]);
+
+  useEffect(() => {
+    if (contract) {
+      getMinted();
+    }
+  }, [contract]);
   return (
     <>
       <nav>
@@ -127,6 +140,7 @@ function App() {
               to claim the first heroes in the game.
             </p>
             <p>One scroll per mint, max 5 scrolls per address</p>
+            {connected && <h3>{minted} / 1000 minted</h3>}
           </div>
           <div className="mint--card">
             <h3 className="mint--card--title">Your tickect to Eldevia</h3>
