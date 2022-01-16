@@ -10,6 +10,8 @@ import Onboard from "bnc-onboard";
 import Notify from "bnc-notify";
 import abi from "./abi/TalesOfEldevia.json";
 import { ethers } from "ethers";
+import mintImg from "./images/mint.png"
+import mapImg from "./images/Map.png"
 
 const CONTRACT = "0x27156b0157965bdE1702CdFD6Aa794e5EFbB6017";
 
@@ -144,7 +146,7 @@ function App() {
           </div>
           <div className="mint--card">
             <h3 className="mint--card--title">Your tickect to Eldevia</h3>
-            <img className="mint--card--img" src="../images/mint.png" />
+            <img className="mint--card--img" src={mintImg} />
             {connected ? (
               <p className="mint--card--btn" onClick={mint}></p>
             ) : (
@@ -166,7 +168,7 @@ function App() {
           1000 Scrolls will be the tickets to access Eldevia, allowing you to
           claim the first heroes in the game.
         </p>
-        <img className="map--img" src="../images/Map.png" alt="game map" />
+        <img className="map--img" src={mapImg} alt="game map" />
         <p className="comingSoon--quest"></p>
       </section>
       <section className="light ">
