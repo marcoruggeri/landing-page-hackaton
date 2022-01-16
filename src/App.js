@@ -141,7 +141,7 @@ function App() {
               1000 Scrolls will be the tickets to access Eldevia, allowing you
               to claim the first heroes in the game.
             </p>
-            <p>One scroll per mint, max 5 scrolls per address</p>
+            <p>One scroll per transaction, max 5 scrolls per address</p>
             {connected && <h3>{minted} / 1000 minted</h3>}
           </div>
           <div className="mint--card">
@@ -174,29 +174,29 @@ function App() {
       <section className="light ">
         <h1 className="title">Roadmap</h1>
         <div className="version--cards">
-          <VersionCard 
+          <VersionCard
             version="1.0"
             step1="Ability to mint heroes"
             step2="Minting gear items, basic spell"
             step3="Demo / Beta"
           />
-          <VersionCard 
-            version="2.0" 
+          <VersionCard
+            version="2.0"
             step1="Definition of characteristics, experience, levels"
             step2="Basic quest presentation"
             step3="Add items, spells"
           />
-          <VersionCard 
+          <VersionCard
             version="3.0"
             step1="Home base creation"
             step2="ERC-20 Token"
             step3="Dynamic implementation of NFTs and Token burning"
           />
-          <VersionCard 
+          <VersionCard
             version="4.0"
             step1="Add new races"
             step2="Ability to change character alignment"
-            step3="PvP" 
+            step3="PvP"
           />
         </div>
       </section>
