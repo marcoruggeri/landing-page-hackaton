@@ -1,7 +1,7 @@
 const MintData = [
   {
     id: 1,
-    name: "Dragonbborn",
+    name: "Dragonborn",
     text: "Elegant and skillful warriors, thanks to their magic heritage and to their acute senses.",
     img: "dragonide",
     statsImg: "Mago-stats",
@@ -57,7 +57,7 @@ const MintData = [
   },
   {
     id: 5,
-    name: "Hogre",
+    name: "Orc",
     text: "Nomad warriors, surely little tactful, destructive on battlefields.",
     img: "ogre",
     statsImg: "Barbaro-stats",
